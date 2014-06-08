@@ -1,0 +1,12 @@
+TrainInfo:
+  Train: 列車車次
+  CarClass: 列車種類
+  Route: 車次行駛路線
+  Line: 行駛 山、海線或無經過
+  LineDir: 列車行駛方向
+  OverNightStn: 跨夜車站代號
+  Cripple: 殘障車
+  Package: 辦理托運
+  Dinning: 餐車
+  Type: 火車狀態
+  Note: 備註

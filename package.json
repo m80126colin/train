@@ -1,0 +1,11 @@
+{
+	"name": "train",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"xml2js": "*",
+		"yamljs": "*",
+		"ejs": "*",
+		"express": "^3.2.5"
+	}
+}

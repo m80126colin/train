@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train</title>
+	<link rel="stylesheet" href="/public/semantic/css/semantic.min.css">
+</head>
+<body>
+	<table class="ui table segment">
+		<thead><tr>
+		<% for (var key in config.TrainInfo) { %>
+			<th><%- config.TrainInfo[key] %></th>
+		<% } %>
+		</tr></thead>
+		<tbody>
+			<% for (var i in daily.TrainInfo) { %>
+				<tr>
+				<% for (var key in config.TrainInfo) { %>
+					<td>
+					<% var attr = daily.TrainInfo[i].$[key]; %>
+					<% if (key == 'CarClass') { %>
+						<%- config.CarClass[attr].zh_tw %>
+					<% } else if (key == 'Type') { %>
+						<%- config.TypeInfo[attr] %>
+					<% } else { %>
+						<%- attr %>
+					<% } %>
+					</td>
+				<% } %>
+				</tr>
+			<% } %>
+		</tbody>
+	</table>
+	<script src="/public/semantic/javascript/semantic.min.js">
+	</script>
+</body>
+</html>

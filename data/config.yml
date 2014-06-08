@@ -1,0 +1,835 @@
+TrainInfo:
+  Train: 列車車次
+  CarClass: 列車種類
+  Route: 車次行駛路線
+  Line: 行駛 山、海線或無經過
+  LineDir: 列車行駛方向
+  OverNightStn: 跨夜車站代號
+  Cripple: 殘障車
+  Package: 辦理托運
+  Dinning: 餐車
+  Type: 火車狀態
+  Note: 備註
+TypeInfo:
+- 常態列車
+- 臨時
+- 團體列車
+- 春節加開車
+TimeInfo:
+  Station: 停靠車站
+  DEPTime: 離站時間
+  ARRTime: 到站時間
+  Order: 車次停靠順序
+  Route: 車站所在路線
+CarClass:
+  1100:
+    zh_tw: 自強
+    en: Tze-Chiang Limited Express
+  1101:
+    zh_tw: 自強
+    en: Tze-Chiang Limited Express
+  1102:
+    zh_tw: 自強(太魯閣號)
+    en: Tze-Chiang Limited Express
+  1107:
+    zh_tw: 新自強
+    en: Tze-Chiang Limited Express
+  1110:
+    zh_tw: 莒光
+    en: Chu-Kuang Express
+  1120:
+    zh_tw: 復興
+    en: Fu-Hsing Semi Express
+  1130:
+    zh_tw: 電車
+    en: Electric Multiple Unit
+  1131:
+    zh_tw: 區間車
+    en: Local Train
+  1132:
+    zh_tw: 區間快
+    en: Fast Local Train
+  1140:
+    zh_tw: 普快車
+    en: Ordinary train
+  1141:
+    zh_tw: 柴快車
+    en: Disel Rail Car
+  1150:
+    zh_tw: 柴油車
+    en: na
+Station:
+  1001:
+    zh_tw: 基隆
+    en: Keelung
+  1002:
+    zh_tw: 八堵
+    en: Badu
+  1003:
+    zh_tw: 七堵
+    en: Cidu
+  1004:
+    zh_tw: 五堵
+    en: Wudu
+  1005:
+    zh_tw: 汐止
+    en: Sijhih
+  1006:
+    zh_tw: 南港
+    en: Nangang
+  1007:
+    zh_tw: 松山
+    en: Songshan
+  1008:
+    zh_tw: 台北
+    en: Taipei
+  1009:
+    zh_tw: 萬華
+    en: Wanhua
+  1011:
+    zh_tw: 板橋
+    en: Banciao
+  1012:
+    zh_tw: 樹林
+    en: Shulin
+  1013:
+    zh_tw: 山佳
+    en: Shanjia
+  1014:
+    zh_tw: 鶯歌
+    en: Yingge
+  1015:
+    zh_tw: 桃園
+    en: Taoyuan
+  1016:
+    zh_tw: 內壢
+    en: Neili
+  1017:
+    zh_tw: 中壢
+    en: Jhongli
+  1018:
+    zh_tw: 埔心
+    en: Pusin
+  1019:
+    zh_tw: 楊梅
+    en: Yangmei
+  1020:
+    zh_tw: 富岡
+    en: Fugang
+  1021:
+    zh_tw: 湖口
+    en: Hukou
+  1022:
+    zh_tw: 新豐
+    en: Sinfong
+  1023:
+    zh_tw: 竹北
+    en: Jhubei
+  1024:
+    zh_tw: 北新竹
+    en: North Hsinchu
+  1025:
+    zh_tw: 新竹
+    en: Hsinchu
+  1026:
+    zh_tw: 香山
+    en: Siangshan
+  1027:
+    zh_tw: 崎頂
+    en: Ciding
+  1028:
+    zh_tw: 竹南
+    en: Jhunan
+  1029:
+    zh_tw: 三坑
+    en: Sankeng
+  1030:
+    zh_tw: 百福
+    en: na
+  1031:
+    zh_tw: 汐科
+    en: na
+  1032:
+    zh_tw: 浮洲
+    en: Fuzhou
+  1033:
+    zh_tw: 北湖
+    en: BaiHwu
+  1102:
+    zh_tw: 談文
+    en: Tanwan
+  1103:
+    zh_tw: 談文南
+    en: Tanwannan
+  1104:
+    zh_tw: 大山
+    en: Dashan
+  1105:
+    zh_tw: 後龍
+    en: Houlong
+  1106:
+    zh_tw: 龍港
+    en: Longgang
+  1107:
+    zh_tw: 白沙屯
+    en: Baishatun
+  1108:
+    zh_tw: 新埔
+    en: Sinpu
+  1109:
+    zh_tw: 通霄
+    en: Tongsiao
+  1110:
+    zh_tw: 苑裡
+    en: Yuanli
+  1111:
+    zh_tw: 日南
+    en: Rihnan
+  1112:
+    zh_tw: 大甲
+    en: Dajia
+  1113:
+    zh_tw: 台中港
+    en: Taichung Port
+  1114:
+    zh_tw: 清水
+    en: Cingshuei
+  1115:
+    zh_tw: 沙鹿
+    en: Shalu
+  1116:
+    zh_tw: 龍井
+    en: Longjing
+  1117:
+    zh_tw: 大肚
+    en: Dadu
+  1118:
+    zh_tw: 追分
+    en: Jhuifen
+  1119:
+    zh_tw: 大肚溪南
+    en: na
+  1120:
+    zh_tw: 彰化
+    en: Changhua
+  1202:
+    zh_tw: 花壇
+    en: Huatan
+  1203:
+    zh_tw: 員林
+    en: Yuanlin
+  1204:
+    zh_tw: 永靖
+    en: Yongjing
+  1205:
+    zh_tw: 社頭
+    en: Shetou
+  1206:
+    zh_tw: 田中
+    en: Tianjhong
+  1207:
+    zh_tw: 二水
+    en: Ershuei
+  1208:
+    zh_tw: 林內
+    en: Linnei
+  1209:
+    zh_tw: 石榴
+    en: Shihliou
+  1210:
+    zh_tw: 斗六
+    en: Douliou
+  1211:
+    zh_tw: 斗南
+    en: Dounan
+  1212:
+    zh_tw: 石龜
+    en: Shihguei
+  1213:
+    zh_tw: 大林
+    en: Dalin
+  1214:
+    zh_tw: 民雄
+    en: Minsyong
+  1215:
+    zh_tw: 嘉義
+    en: Chiayi
+  1217:
+    zh_tw: 水上
+    en: Shueishang
+  1218:
+    zh_tw: 南靖
+    en: Nanjing
+  1219:
+    zh_tw: 後壁
+    en: Houbi
+  1220:
+    zh_tw: 新營
+    en: Sinying
+  1221:
+    zh_tw: 柳營
+    en: Liouying
+  1222:
+    zh_tw: 林鳳營
+    en: Linfongying
+  1223:
+    zh_tw: 隆田
+    en: Longtian
+  1224:
+    zh_tw: 拔林
+    en: Balin
+  1225:
+    zh_tw: 善化
+    en: Shanhua
+  1226:
+    zh_tw: 新市
+    en: Sinshih
+  1227:
+    zh_tw: 永康
+    en: Yongkang
+  1228:
+    zh_tw: 台南
+    en: Tainan
+  1229:
+    zh_tw: 保安
+    en: Baoan
+  1230:
+    zh_tw: 中洲
+    en: Jhongjhou
+  1231:
+    zh_tw: 大湖
+    en: Dahu
+  1232:
+    zh_tw: 路竹
+    en: Lujhu
+  1233:
+    zh_tw: 岡山
+    en: Gangshan
+  1234:
+    zh_tw: 橋頭
+    en: Ciaotou
+  1235:
+    zh_tw: 楠梓
+    en: Nanzih
+  1236:
+    zh_tw: 左營
+    en: Zuoying
+  1237:
+    zh_tw: 鼓山
+    en: Gushan
+  1238:
+    zh_tw: 高雄
+    en: Kaohsiung
+  1239:
+    zh_tw: 大橋
+    en: Daciao
+  1240:
+    zh_tw: 大村
+    en: Datsun
+  1241:
+    zh_tw: 嘉北
+    en: ChiaPei
+  1242:
+    zh_tw: 新左營
+    en: na
+  1243:
+    zh_tw: 仁德
+    en: Rende
+  1244:
+    zh_tw: 南科
+    en: Nanke
+  1302:
+    zh_tw: 造橋
+    en: Zaociao
+  1304:
+    zh_tw: 豐富
+    en: Fongfu
+  1305:
+    zh_tw: 苗栗
+    en: Miaoli
+  1307:
+    zh_tw: 南勢
+    en: Nanshih
+  1308:
+    zh_tw: 銅鑼
+    en: Tongluo
+  1310:
+    zh_tw: 三義
+    en: Sanyi
+  1314:
+    zh_tw: 泰安
+    en: Taian
+  1315:
+    zh_tw: 后里
+    en: Houli
+  1317:
+    zh_tw: 豐原
+    en: Fongyuan
+  1318:
+    zh_tw: 潭子
+    en: Tanzih
+  1319:
+    zh_tw: 台中
+    en: Taichung
+  1320:
+    zh_tw: 烏日
+    en: Wurih
+  1321:
+    zh_tw: 成功
+    en: Chenggong
+  1322:
+    zh_tw: 大慶
+    en: Dacing
+  1323:
+    zh_tw: 太原
+    en: Taiyuan
+  1324:
+    zh_tw: 新烏日
+    en: na
+  1402:
+    zh_tw: 鳳山
+    en: Fongshan
+  1403:
+    zh_tw: 後庄
+    en: Houjhuang
+  1404:
+    zh_tw: 九曲堂
+    en: Jioucyutang
+  1405:
+    zh_tw: 六塊厝
+    en: Lioukuaicuo
+  1406:
+    zh_tw: 屏東
+    en: Pingtung
+  1407:
+    zh_tw: 歸來
+    en: Gueilai
+  1408:
+    zh_tw: 麟洛
+    en: Linluo
+  1409:
+    zh_tw: 西勢
+    en: Sishih
+  1410:
+    zh_tw: 竹田
+    en: Jhutian
+  1411:
+    zh_tw: 潮州
+    en: Chaojhou
+  1412:
+    zh_tw: 崁頂
+    en: Kanding
+  1413:
+    zh_tw: 南州
+    en: Nanjhou
+  1414:
+    zh_tw: 鎮安
+    en: Jhenan
+  1415:
+    zh_tw: 林邊
+    en: Linbian
+  1416:
+    zh_tw: 佳冬
+    en: Jiadong
+  1417:
+    zh_tw: 東海
+    en: Donghai
+  1418:
+    zh_tw: 枋寮
+    en: Fangliao
+  1502:
+    zh_tw: 加祿
+    en: Jialu
+  1503:
+    zh_tw: 內獅
+    en: Neishih
+  1504:
+    zh_tw: 枋山
+    en: Fangshan
+  1505:
+    zh_tw: 枋野
+    en: Fangye
+  1506:
+    zh_tw: 中央
+    en: na
+  1507:
+    zh_tw: 古莊
+    en: Gujhuang
+  1508:
+    zh_tw: 大武
+    en: Dawu
+  1510:
+    zh_tw: 瀧溪
+    en: Lunghsi
+  1511:
+    zh_tw: 多良
+    en: na
+  1512:
+    zh_tw: 金崙
+    en: Jinlun
+  1514:
+    zh_tw: 太麻里
+    en: Taimali
+  1516:
+    zh_tw: 知本
+    en: Jhihben
+  1517:
+    zh_tw: 康樂
+    en: Kangle
+  1602:
+    zh_tw: 吉安
+    en: Jian
+  1604:
+    zh_tw: 志學
+    en: Jhihsyue
+  1605:
+    zh_tw: 平和
+    en: Pinghe
+  1606:
+    zh_tw: 壽豐
+    en: Shoufong
+  1607:
+    zh_tw: 豐田
+    en: Fongtian
+  1608:
+    zh_tw: 溪口
+    en: Sikou
+  1609:
+    zh_tw: 南平
+    en: Nanping
+  1610:
+    zh_tw: 鳳林
+    en: Fonglin
+  1611:
+    zh_tw: 萬榮
+    en: Wanrong
+  1612:
+    zh_tw: 光復
+    en: Guangfu
+  1613:
+    zh_tw: 大富
+    en: Dafu
+  1614:
+    zh_tw: 富源
+    en: Fuyuan
+  1616:
+    zh_tw: 瑞穗
+    en: Rueisuei
+  1617:
+    zh_tw: 三民
+    en: Sanmin
+  1619:
+    zh_tw: 玉里
+    en: Yuli
+  1620:
+    zh_tw: 安通
+    en: Antung
+  1621:
+    zh_tw: 東里
+    en: Dongli
+  1622:
+    zh_tw: 東竹
+    en: Dongjhu
+  1623:
+    zh_tw: 富里
+    en: Fuli
+  1624:
+    zh_tw: 池上
+    en: Chihshang
+  1625:
+    zh_tw: 海端
+    en: Haiduan
+  1626:
+    zh_tw: 關山
+    en: Guanshan
+  1627:
+    zh_tw: 月美
+    en: Yuemei
+  1628:
+    zh_tw: 瑞和
+    en: Rueihe
+  1629:
+    zh_tw: 瑞源
+    en: Rueiyuan
+  1630:
+    zh_tw: 鹿野
+    en: Luye
+  1631:
+    zh_tw: 山里
+    en: Shanli
+  1632:
+    zh_tw: 台東
+    en: Taitung
+  1633:
+    zh_tw: 馬(廢)蘭
+    en: na
+  1634:
+    zh_tw: 台(廢)東
+    en: na
+  1635:
+    zh_tw: 舞鶴
+    en: Wuhe
+  1703:
+    zh_tw: 永樂
+    en: Yongle
+  1704:
+    zh_tw: 東澳
+    en: Dongao
+  1705:
+    zh_tw: 南澳
+    en: Nanao
+  1706:
+    zh_tw: 武塔
+    en: Wuta
+  1708:
+    zh_tw: 漢本
+    en: Hanben
+  1709:
+    zh_tw: 和平
+    en: Heping
+  1710:
+    zh_tw: 和仁
+    en: Horen
+  1711:
+    zh_tw: 崇德
+    en: Chongde
+  1712:
+    zh_tw: 新城
+    en: Sincheng
+  1713:
+    zh_tw: 景美
+    en: Jingmei
+  1714:
+    zh_tw: 北埔
+    en: Beipu
+  1715:
+    zh_tw: 花蓮
+    en: Hualien
+  1802:
+    zh_tw: 暖暖
+    en: Nuannuan
+  1803:
+    zh_tw: 四腳亭
+    en: Sihjiaoting
+  1804:
+    zh_tw: 瑞芳
+    en: Rueifang
+  1805:
+    zh_tw: 侯硐
+    en: Houtung
+  1806:
+    zh_tw: 三貂嶺
+    en: Sandiaoling
+  1807:
+    zh_tw: 牡丹
+    en: Mudan
+  1808:
+    zh_tw: 雙溪
+    en: Shuangsi
+  1809:
+    zh_tw: 貢寮
+    en: Gungliao
+  1810:
+    zh_tw: 福隆
+    en: Fulong
+  1811:
+    zh_tw: 石城
+    en: Shihcheng
+  1812:
+    zh_tw: 大里
+    en: Dali
+  1813:
+    zh_tw: 大溪
+    en: Dasi
+  1814:
+    zh_tw: 龜山
+    en: Gueishan
+  1815:
+    zh_tw: 外澳
+    en: Waiao
+  1816:
+    zh_tw: 頭城
+    en: Toucheng
+  1817:
+    zh_tw: 頂埔
+    en: Dingpu
+  1818:
+    zh_tw: 礁溪
+    en: Jiaohsi
+  1819:
+    zh_tw: 四城
+    en: Sihcheng
+  1820:
+    zh_tw: 宜蘭
+    en: Yilan
+  1821:
+    zh_tw: 二結
+    en: Erjie
+  1822:
+    zh_tw: 中里
+    en: Jhongli
+  1823:
+    zh_tw: 羅東
+    en: Luodong
+  1824:
+    zh_tw: 冬山
+    en: Dongshan
+  1825:
+    zh_tw: 新馬
+    en: Sinma
+  1826:
+    zh_tw: 蘇澳新
+    en: Suaosin
+  1827:
+    zh_tw: 蘇澳
+    en: Suao
+  1903:
+    zh_tw: 大華
+    en: Dahua
+  1904:
+    zh_tw: 十分
+    en: Shihfen
+  1905:
+    zh_tw: 望古
+    en: Wanggu
+  1906:
+    zh_tw: 嶺腳
+    en: Lingjiao
+  1907:
+    zh_tw: 平溪
+    en: Pingsi
+  1908:
+    zh_tw: 菁桐
+    en: Jingtong
+  2002:
+    zh_tw: 深澳
+    en: na
+  2102:
+    zh_tw: 五福
+    en: na
+  2103:
+    zh_tw: 林口
+    en: Linkou
+  2104:
+    zh_tw: 電廠
+    en: na
+  2105:
+    zh_tw: 桃中
+    en: na
+  2106:
+    zh_tw: 寶山
+    en: na
+  2107:
+    zh_tw: 南祥
+    en: na
+  2108:
+    zh_tw: 長興
+    en: Hengshan
+  2109:
+    zh_tw: 海山站
+    en: na
+  2110:
+    zh_tw: 海湖站
+    en: na
+  2203:
+    zh_tw: 竹中
+    en: Jhujhong
+  2204:
+    zh_tw: 上員
+    en: Shangyuan
+  2205:
+    zh_tw: 竹東
+    en: Jhudong
+  2206:
+    zh_tw: 橫山
+    en: Hengshan
+  2207:
+    zh_tw: 九讚頭
+    en: jiouzantou
+  2208:
+    zh_tw: 合興
+    en: Hesing
+  2209:
+    zh_tw: 富貴
+    en: Fuguei
+  2210:
+    zh_tw: 內灣
+    en: Neiwan
+  2211:
+    zh_tw: 榮華
+    en: Ronghua
+  2212:
+    zh_tw: 千甲
+    en: Qianjia
+  2213:
+    zh_tw: 新莊
+    en: Xinzhuang
+  2214:
+    zh_tw: 六家
+    en: Liujia
+  2302:
+    zh_tw: 台中港貨
+    en: Taichung Port
+  2402:
+    zh_tw: 龍井煤場
+    en: Longjing
+  2502:
+    zh_tw: 神岡
+    en: Shangang
+  2702:
+    zh_tw: 源泉
+    en: Yuanciyuan
+  2703:
+    zh_tw: 濁水
+    en: Jhuoshuei
+  2704:
+    zh_tw: 龍泉
+    en: Lungcyuan
+  2705:
+    zh_tw: 集集
+    en: Jiji
+  2706:
+    zh_tw: 水里
+    en: Shueili
+  2707:
+    zh_tw: 車埕
+    en: Checheng
+  2802:
+    zh_tw: 南調
+    en: Nandiao
+  2902:
+    zh_tw: 高雄港
+    en: Kaohsiung Port
+  3102:
+    zh_tw: 前鎮
+    en: na
+  3202:
+    zh_tw: 花蓮港
+    en: hualien Port
+  3302:
+    zh_tw: 中興一號
+    en: na
+  3402:
+    zh_tw: 中興二號
+    en: na
+  3902:
+    zh_tw: 機廠
+    en: na
+  4102:
+    zh_tw: 樹調
+    en: ShuDiao
+  4202:
+    zh_tw: 東港支線
+    en: na
+  4302:
+    zh_tw: 東南支線
+    en: na
+  5101:
+    zh_tw: 長榮大學
+    en: Chang Jung Christian University
+  5102:
+    zh_tw: 沙崙
+    en: Shalun
+  6103:
+    zh_tw: 海科館
+    en: na
